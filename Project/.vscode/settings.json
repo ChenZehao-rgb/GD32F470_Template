@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "bsp_led.h": "c",
+        "bsp_usart.h": "c",
+        "bsp_key.h": "c",
+        "bsp_basic_timer.h": "c",
+        "bsp_pwm.h": "c",
+        "bsp_dma.h": "c"
+    }
+}

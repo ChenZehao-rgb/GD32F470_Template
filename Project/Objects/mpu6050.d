@@ -1,4 +1,5 @@
-./objects/main.o: ..\User\main.c \
+./objects/mpu6050.o: ..\Hardware\Source\mpu6050.c \
+  ..\Hardware\Include\mpu6050.h \
   ..\Firmware\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h \
   ..\Firmware\CMSIS\core_cm4.h D:\keil_v5\ARM\ARMCLANG\include\stdint.h \
   ..\Firmware\CMSIS\core_cmInstr.h ..\Firmware\CMSIS\core_cmFunc.h \
@@ -35,10 +36,5 @@
   ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h \
   ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h \
   ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h \
-  ..\User\systick.h ..\User\main.h \
-  D:\keil_v5\ARM\ARMCLANG\include\stdio.h \
-  D:\keil_v5\ARM\ARMCLANG\include\string.h ..\Hardware\Include\bsp_led.h \
-  ..\Hardware\Include\bsp_usart.h ..\Hardware\Include\bsp_key.h \
-  ..\Hardware\Include\bsp_pwm.h ..\Hardware\Include\bsp_basic_timer.h \
-  ..\Hardware\Include\bsp_dma.h ..\Hardware\Include\mpu6050.h \
-  ..\Hardware\Include\inv_mpu.h
+  ..\Hardware\Include\bsp_usart.h ..\User\systick.h \
+  D:\keil_v5\ARM\ARMCLANG\include\stdio.h

@@ -5,6 +5,14 @@
         "bsp_key.h": "c",
         "bsp_basic_timer.h": "c",
         "bsp_pwm.h": "c",
-        "bsp_dma.h": "c"
+        "bsp_dma.h": "c",
+        "mpu6050.h": "c",
+        "soft_i2c.h": "c",
+        "sys.h": "c",
+        "string.h": "c",
+        "stdio.h": "c",
+        "inv_mpu.h": "c",
+        "systick.h": "c",
+        "intrin.h": "c"
     }
 }

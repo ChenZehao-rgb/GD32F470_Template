@@ -55,6 +55,14 @@ void systick_config(void)
     NVIC_SetPriority(SysTick_IRQn, 0x00U);
 }
 
+void delay_us(uint32_t count)
+{
+    delay = count;
+
+    while(0U != delay) {
+    }
+}
+
 /*!
     \brief    delay a time in milliseconds
     \param[in]  count: count in milliseconds
@@ -63,7 +71,7 @@ void systick_config(void)
 */
 void delay_1ms(uint32_t count)
 {
-    delay = count;
+    delay = count*1000;
 
     while(0U != delay) {
     }

@@ -1,15 +1,24 @@
+//系统文件
 #include "gd32f4xx.h"
 #include "systick.h"
-#include <stdio.h>
 #include "main.h"
+//字符支持
+#include <stdio.h>
+#include "stdlib.h"
+#include "string.h"
+
+//板级硬件
 #include "bsp_led.h"
 #include "bsp_usart.h"
 #include "bsp_key.h"
 #include "bsp_pwm.h"
 #include "bsp_basic_timer.h"
-#include "stdlib.h"
-#include "string.h"
 #include "bsp_dma.h"
+//传感器
+#include "mpu6050.h"
+#include "inv_mpu.h"
+
+
 
 int main(void)
 {

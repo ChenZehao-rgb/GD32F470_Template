@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,GD32F470</Define>
               <Undefine></Undefine>
-              <IncludePath>..\User;..\Firmware\CMSIS;..\Firmware\GD32F4xx_standard_peripheral\Include;..\Firmware\CMSIS\GD\GD32F4xx\Include;..\Hardware\Include;..\FreeRTOS\Source\include;..\FreeRTOS\Source\portable\RVDS\ARM_CM4_MPU</IncludePath>
+              <IncludePath>..\User;..\Firmware\CMSIS;..\Firmware\GD32F4xx_standard_peripheral\Include;..\Firmware\CMSIS\GD\GD32F4xx\Include;..\Hardware\Include;..\App\Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -439,10 +439,22 @@
               <FileType>1</FileType>
               <FilePath>..\Hardware\Source\bsp_dma.c</FilePath>
             </File>
+            <File>
+              <FileName>mpu6050.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardware\Source\mpu6050.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>App</GroupName>
+          <Files>
+            <File>
+              <FileName>motor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\Source\motor.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>Firmware</GroupName>
@@ -523,9 +535,9 @@
           <GroupName>Doc</GroupName>
           <Files>
             <File>
-              <FileName>readme.txt</FileName>
+              <FileName>README.md</FileName>
               <FileType>5</FileType>
-              <FilePath>..\Doc\readme.txt</FilePath>
+              <FilePath>..\README.md</FilePath>
             </File>
           </Files>
         </Group>

@@ -41,7 +41,7 @@ void pwm_config(uint16_t pre,uint16_t per)
 	timere_initpara.prescaler = pre-1;                   	// 时钟预分频值   PSC_CLK= 200MHZ / 200 = 1MHZ       
 	timere_initpara.alignedmode = TIMER_COUNTER_EDGE;      	// 边缘对齐                
 	timere_initpara.counterdirection = TIMER_COUNTER_UP;    // 向上计数    	                    
-	timere_initpara.period = per-1;      					// 周期    T = 10000 * 1MHZ = 10ms  f = 100HZ   
+	timere_initpara.period = per-1;      					// 周期    T = 10000 * 1MHZ = 10ms  f = 100HZ     50hz，设置per为5000
 	/* 在输入捕获的时候使用  数字滤波器使用的采样频率之间的分频比例 */	
 	timere_initpara.clockdivision = TIMER_CKDIV_DIV1;    	  // 分频因子
 	/* 只有高级定时器才有 配置为x，就重复x+1次进入中断 */
@@ -78,9 +78,9 @@ void pwm_breathing_lamp(void)
 	static uint8_t direct = 0; // 方向
 	static uint16_t value = 0; // 脉冲值
 	
-	if(direct == 0)					 // 逐渐变亮 
+	if(direct == 0)				// 逐渐变亮 
 	{
-		value += 300;					 // 值越大 越亮 
+		value += 300;			// 值越大 越亮 
 		if(value > 10000)		 
 		   direct = 1;         // 改变方向
 	}else // 逐渐变暗

@@ -13,6 +13,7 @@
         "stdio.h": "c",
         "inv_mpu.h": "c",
         "systick.h": "c",
-        "intrin.h": "c"
+        "intrin.h": "c",
+        "inv_mpu_dmp_motion_driver.h": "c"
     }
 }
